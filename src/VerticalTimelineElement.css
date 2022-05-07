@@ -2,27 +2,34 @@
   position: relative;
   margin: 2em 0;
 }
-.vertical-timeline-element > div {
+
+.vertical-timeline-element>div {
   min-height: 1px;
 }
+
 .vertical-timeline-element:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .vertical-timeline-element:first-child {
   margin-top: 0;
 }
+
 .vertical-timeline-element:last-child {
   margin-bottom: 0;
 }
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline-element {
     margin: 4em 0;
   }
+
   .vertical-timeline-element:first-child {
     margin-top: 0;
   }
+
   .vertical-timeline-element:last-child {
     margin-bottom: 0;
   }
@@ -37,6 +44,7 @@
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
   left: unset;
@@ -68,9 +76,11 @@
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
+
 .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
   visibility: hidden;
 }
+
 .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
   visibility: visible;
   -webkit-animation: cd-bounce-1 0.6s;
@@ -93,6 +103,7 @@
     -webkit-transform: scale(1);
   }
 }
+
 @-moz-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
@@ -108,6 +119,7 @@
     -moz-transform: scale(1);
   }
 }
+
 @keyframes cd-bounce-1 {
   0% {
     opacity: 0;
@@ -135,6 +147,7 @@
     transform: scale(1);
   }
 }
+
 .vertical-timeline-element-content {
   position: relative;
   margin-left: 60px;
@@ -153,22 +166,28 @@
   background: transparent;
   box-shadow: none;
 }
+
 .vertical-timeline-element-content:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .vertical-timeline-element-content h2 {
   color: #303e49;
 }
-.vertical-timeline-element-content p, .vertical-timeline-element-content .vertical-timeline-element-date {
+
+.vertical-timeline-element-content p,
+.vertical-timeline-element-content .vertical-timeline-element-date {
   font-size: 13px;
   font-size: 0.8125rem;
   font-weight: 500;
 }
+
 .vertical-timeline-element-content .vertical-timeline-element-date {
   display: inline-block;
 }
+
 .vertical-timeline-element-content p {
   margin: 1em 0 0;
   line-height: 1.6;
@@ -187,6 +206,7 @@
   padding: .8em 0;
   opacity: .7;
 }
+
 .vertical-timeline-element-content-arrow {
   content: '';
   position: absolute;
@@ -230,21 +250,25 @@
     font-size: 20px;
     font-size: 1.25rem;
   }
+
   .vertical-timeline-element-content p {
     font-size: 16px;
     font-size: 1rem;
   }
+
   .vertical-timeline-element-content .vertical-timeline-element-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-content {
     margin-left: 0;
     padding: 1.5em;
     width: 44%;
   }
+
   .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
     top: 24px;
     left: 100%;
@@ -254,7 +278,7 @@
   .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     position: absolute;
     width: 100%;
-    left: 124%;
+    left: 85%;
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
@@ -264,6 +288,7 @@
   .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
     float: right;
   }
+
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow,
   .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow {
     top: 24px;
@@ -292,6 +317,7 @@
 .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
   visibility: hidden;
 }
+
 .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
   visibility: visible;
   -webkit-animation: cd-bounce-2 0.6s;
@@ -300,6 +326,7 @@
 }
 
 @media only screen and (min-width: 1170px) {
+
   /* inverse bounce effect on even content blocks */
   .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in,
   .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in {
@@ -333,6 +360,7 @@
     -webkit-transform: translateX(0);
   }
 }
+
 @-moz-keyframes cd-bounce-2 {
   0% {
     opacity: 0;
@@ -348,6 +376,7 @@
     -moz-transform: translateX(0);
   }
 }
+
 @keyframes cd-bounce-2 {
   0% {
     opacity: 0;
@@ -375,6 +404,7 @@
     transform: translateX(0);
   }
 }
+
 @-webkit-keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
@@ -390,6 +420,7 @@
     -webkit-transform: translateX(0);
   }
 }
+
 @-moz-keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
@@ -405,6 +436,7 @@
     -moz-transform: translateX(0);
   }
 }
+
 @keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
